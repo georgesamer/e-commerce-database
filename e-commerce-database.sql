@@ -83,7 +83,7 @@ VALUES ('Laptop', 'High performance laptop', 1200.00, 10),
 -- Linking via Join Table
 INSERT INTO product_categories (product_id, category_id) VALUES (1, 1), (2, 2);
 
--- 8. Example Query: Inner Join - محدث بناءً على الأسماء الصحيحة للأعمدة
+-- 8. Example Query: Inner Join
 SELECT p.name AS product_name, c.name AS category_name
 FROM products p
 JOIN product_categories pc ON p.id = pc.product_id
